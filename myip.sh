@@ -12,6 +12,7 @@ function whoami {
  "curl -s checkip.amazonaws.com"
  "curl -s myip.dnsomatic.com"
  "curl -s icanhazip.com"
+ "curl -s whoami-010101.appspot.com"
  )
  for url in "${ipproviders[@]}"; do 
    myip=$($url | sed 's/"//g')
